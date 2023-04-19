@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Portfolio Web Sites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            
+            <img src="/images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Servies</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front End Developer</p>
+            <h1>Hi i'am <span>Kevin</span> <br> Front End Developer</h1>
+        </div>
+    </div>
+    </div>
+    <!-- ..................about.......... -->
+    
+    <div id="about">
+        <div class="ontainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/user.png" alt="logo">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet harum perspiciatis quam sint porro eligendi, tempore minus ipsa in nisi quas quisquam unde velit dicta, quos sed, obcaecati dolore incidunt!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="('Experience')">Experience</p>
+                        <p class="tab-links" onclick="('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/APP Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Andriod/IOS apps</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021- Current</span><br>Ui/Ux design training at et institute</li>
+                            <li><span>2019 -2021</span><br>team lead at starapp llc</li>
+                            <li><span>2017-2019</span><br>internship at ekart ecommerce </li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>ui/ux design traning at ek institute</li>
+                            <li><span>2016</span><br>mba from mit bangalore</li>
+                            <li><span>2014</span><br>Bba from ism bangalore</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..........services........> --> 
+    
+
+   <div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web design</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eos eius nemo.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>ui/ux</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eos eius nemo.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-shop"></i>
+            <h2>app desgin</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eos eius nemo.</p>
+            <a href="">Learn more</a>
+        </div>
+    </div>
+</div>
+   </div>
+   <!-- ..............portfolio...... -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/work-1.png" alt="xoxo">
+                <div class="layer">
+                    <h3>Soical Media App</h3>
+                    <p>The app connects you the talented people around the world download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+           
+            <div class="work">
+                <img src="/images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music  App</h3>
+                    <p>The app connects you the talented people around the world download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/work-3.png" alt="nitin">
+                <div class="layer">
+                    <h3>Online Shopping  App</h3>
+                    <p>The app connects you the talented people around the world download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a  href="#" class="btn">SEE  MORE</a>
+    </div>
+   </div>
+   <!-- //////////contact//// -->
+   <div  id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p> <i class="fa-solid fa-phone"></i>3656557577
+                </p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="/images/my-cv.pdf" download="" class="btn btn2">download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copy @ kevin.<i class="fa-solid fa-heart"></i> made with by easy tutorials</p>
+    </div>
+   </div>
+    <script>
+
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classlist.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px ";
+
+        }
+    </script>
+</body>
+</html>
